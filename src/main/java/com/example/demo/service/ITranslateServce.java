@@ -7,6 +7,8 @@ import java.io.IOException;
  * @author :songyuan.zheng
  * @date :  2023/7/1 14:07
  */
-public interface IWordTOpdfServce {
+public interface ITranslateServce {
     void wordTOpdf() throws IOException;
+
+    void pdfTOword();
 }

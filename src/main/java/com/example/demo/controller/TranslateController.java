@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.service.IWordTOpdfServce;
+import com.example.demo.service.ITranslateServce;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,16 +12,22 @@ import java.io.IOException;
  * @date :  2023/7/1 14:50
  */
 @RestController
-@RequestMapping("word-to-pdf")
-public class WordTOpdfController {
-    private final IWordTOpdfServce iWordTOpdfServce;
+@RequestMapping("translate")
+public class TranslateController {
+    private final ITranslateServce iWordTOpdfServce;
 
-    public WordTOpdfController(IWordTOpdfServce iWordTOpdfServce) {
+    public TranslateController(ITranslateServce iWordTOpdfServce) {
         this.iWordTOpdfServce = iWordTOpdfServce;
     }
 
-    @PostMapping("translate")
+    @PostMapping("word-to-pdf")
     public void setiWordTOpdfServce() throws IOException {
         iWordTOpdfServce.wordTOpdf();
+    }
+
+
+    @PostMapping("pdf-to-word")
+    public void setipdfTOwordServce()  {
+        iWordTOpdfServce.pdfTOword();
     }
 }
