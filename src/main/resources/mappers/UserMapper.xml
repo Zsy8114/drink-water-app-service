@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <select id="findById" resultType="com.example.demo.mapper.domain.user">
+        select * from nft_user t
+        where t.active='0'
+        and t.id=#{id,jdbcType=VARCHAR}
+    </select>
+    <select id="findByIdentity" resultType="com.example.demo.mapper.domain.user">
+        select * from nft_user t
+        where t.active='0'
+        and t.identity=#{identity,jdbcType=VARCHAR}
+    </select>
+
+</mapper>

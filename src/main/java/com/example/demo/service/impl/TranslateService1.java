@@ -9,6 +9,7 @@ import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
+import org.springframework.stereotype.Service;
 
 import java.io.*;
 
@@ -16,6 +17,7 @@ import java.io.*;
  * @author :songyuan.zheng
  * @date :  2023/7/1 23:33
  */
+@Service
 public class TranslateService1 implements ITranslateServce {
     @Override
     public void wordTOpdf()  {

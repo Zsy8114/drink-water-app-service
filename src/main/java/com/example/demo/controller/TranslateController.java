@@ -20,6 +20,7 @@ public class TranslateController {
         this.iWordTOpdfServce = iWordTOpdfServce;
     }
 
+
     @PostMapping("word-to-pdf")
     public void setiWordTOpdfServce() throws IOException {
         iWordTOpdfServce.wordTOpdf();
