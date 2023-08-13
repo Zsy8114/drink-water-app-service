@@ -30,6 +30,10 @@ public class UserDto  {
      */
     private String age;
     /**
+     * mac提交测试
+     */
+    private String macTest;
+    /**
      * 出生日期
      */
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GTM+8")
