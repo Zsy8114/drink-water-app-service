@@ -2,10 +2,9 @@ package com.example.demo.dto;
 
 
 
-import com.example.demo.mapper.domain.user;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
