@@ -16,7 +16,7 @@ import java.io.IOException;
 public class TranslateController {
     private final ITranslateServce iWordTOpdfServce;
 
-    public TranslateController(ITranslateServce iWordTOpdfServce) {
+    public TranslateController (ITranslateServce iWordTOpdfServce) {
         this.iWordTOpdfServce = iWordTOpdfServce;
     }
 
